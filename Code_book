@@ -1,0 +1,28 @@
+activityLabel   <- id and activity labels
+features        <- Features
+subject_test    <- Voluntaries
+X_test          <- Features numbers of the voluntaries
+y_test          <- Activities of the voluntaries
+body_acc_x_test <- read.table("./test/Inertial Signals/body_acc_x_test.txt", header=FALSE)
+body_acc_z_test <- read.table("./test/Inertial Signals/body_acc_z_test.txt", header=FALSE)
+body_acc_y_test <- read.table("./test/Inertial Signals/body_acc_y_test.txt", header=FALSE)
+body_gyro_x_test <- read.table("./test/Inertial Signals/body_gyro_x_test.txt", header=FALSE)
+body_gyro_y_test <- read.table("./test/Inertial Signals/body_gyro_y_test.txt", header=FALSE)
+body_gyro_z_test <- read.table("./test/Inertial Signals/body_gyro_z_test.txt", header=FALSE)
+total_acc_x_test <- read.table("./test/Inertial Signals/total_acc_x_test.txt", header=FALSE)
+total_acc_y_test <- read.table("./test/Inertial Signals/total_acc_y_test.txt", header=FALSE)
+subject     <- id voluntaries
+x           <- features numbers of the voluntaries
+y          <- activitys of the voluntaries
+body_acc_x  <- x axial acelerómetro 
+body_acc_z  <- z axial acelerómetro 
+body_acc_y  <- y axial acelerómetro 
+body_gyro_x <- axial giroscopio
+body_gyro_y <- axial giroscopio
+body_gyro_z <- axial giroscopio
+total_acc_x <- x total axial acelerómetro 
+total_acc_y <- y total axial acelerómetro 
+total_acc_z <- z total axial acelerómetro 
+Data <-All data, test and train (subject, activitydesc and features)
+Data1 <-Data but only features mean and std)
+tidyData <- data of the subject and activity desc with the mean of the feature mean-std
